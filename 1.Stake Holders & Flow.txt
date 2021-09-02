@@ -1,0 +1,54 @@
+Online Hotel Management System
+
+-->StakeHolders
+
+1.owner/Admin
+2.manager
+3.receptionist
+4.customer
+
+-->Flow
+
+1.Owner/Admin -> manages all departments.
+2.Manager -> manages all room,staff,inventory details
+3.Receptionist -> manages guest details,rooms,reservations,bills.
+4.Customer -> Open App -> Login -> receptionist -> rooms availability ->room details -> reservation -> customer details -> payment -> check-in -> check-out.
+
+-->Database tables
+
+1.Customer
+customer name
+customer email
+phone number
+address
+reservation
+status
+
+2.Payment
+id
+customer name
+type
+date
+
+3.Room
+room no
+room type
+
+4.Guest
+guest name
+guest phone number
+email
+address
+room no
+amount
+
+5.Staff
+employee name
+employee id
+designation/department
+phone number
+address
+
+6.Department
+department id
+department name
