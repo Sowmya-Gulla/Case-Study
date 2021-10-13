@@ -1,0 +1,41 @@
+<p class="tool">
+    <mat-toolbar color="primary">
+      <button mat-button routerLink="/home"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></button>
+      <span>Hotel Management System</span>
+      <!--<button mat-button routerLink="hotels">Hotels</button>
+      <button mat-button>Booking</button>-->
+      <span class="example-spacer"></span>
+      <button mat-button routerLink="/login">Login</button>
+      <button mat-button routerLink="/signup">Sign Up</button>
+      <button mat-button routerLink="/admin">Admin</button>
+    </mat-toolbar>
+</p>
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                    <h1 class="text-center">Sign Up</h1>
+                    <form (ngSubmit)="formSubmit()">
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input [(ngModel)]="user.username" name="username" matInput placeholder="Enter username" required>
+                            <mat-hint>Username must be unique!!</mat-hint>
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input [(ngModel)]="user.password" type="password" name="password" matInput placeholder="Enter password" required minlength="6" maxlength="10">
+                            <mat-hint>Password must be 6-10 characters</mat-hint>
+                        </mat-form-field>
+                        <div class="container" style="text-align: center;">
+                            <button type="submit" mat-raised-button color="primary">Sign Up</button>
+                            
+                        </div>
+                    </form>
+                </mat-card>
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<p class="tool">
+    <mat-toolbar color="primary">
+      <button mat-button routerLink="/home"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></button>
+      <span>Hotel Management System</span>
+      <!--<button mat-button routerLink="hotels">Hotels</button>
+      <button mat-button>Booking</button>-->
+      <span class="example-spacer"></span>
+      <button  mat-button routerLink="/home">Logout</button>
+    </mat-toolbar>
+</p>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                    <h1 class="text-center">Add Room</h1>
+                    <form (ngSubmit)="formSubmit()">
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Id</mat-label>
+                            <input [(ngModel)]="rooms.id" name="id" matInput placeholder="Enter id">
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Room No</mat-label>
+                            <input [(ngModel)]="rooms.roomno" name="roomno" matInput placeholder="Enter roomno">
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Room Type</mat-label>
+                            <input [(ngModel)]="rooms.type" name="type" matInput placeholder="Enter room type">
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Price</mat-label>
+                            <input [(ngModel)]="rooms.price" name="price" matInput placeholder="Enter price">
+                        </mat-form-field>
+                        <div class="container" style="text-align: center;">
+                            <button type="submit" mat-raised-button color="primary">Add</button> 
+                            <button type="button" routerLink="/roomlist" mat-raised-button color="primary" style=" margin-left: 20px;">Go back</button>  
+                        </div>
+                    </form>
+                </mat-card>
+                
+            </div>
+        </div>
+    </div>
+</div>
+

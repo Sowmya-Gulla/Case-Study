@@ -1,0 +1,7 @@
+.example-card {
+    max-width:  100%;
+    max-height: max-content;
+}
+.example-spacer{
+    flex:1 1 auto
+}

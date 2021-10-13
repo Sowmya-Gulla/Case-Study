@@ -1,0 +1,9 @@
+.full-width{
+    width: 85%;
+}
+.example-spacer{
+    flex:1 1 auto
+}
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}

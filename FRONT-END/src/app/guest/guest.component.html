@@ -1,0 +1,51 @@
+<p class="tool">
+    <mat-toolbar color="primary">
+      <button mat-button routerLink="/home"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></button>
+      <span>Hotel Management System</span>
+      <span class="example-spacer"></span>
+      <button  mat-button routerLink="/home">Logout</button>
+    </mat-toolbar>
+  </p>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                    <h1 class="text-center">Guest Details</h1>
+                <form (ngSubmit)="formSubmit()">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Guest Name</mat-label>
+                        <input [(ngModel)]="guest.name" name="name" matInput placeholder="Enter guest name" required>
+                        
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Phone number</mat-label>
+                        <input [(ngModel)]="guest.phonenum" name="phonenum" matInput placeholder="xxxxxxxxxx" required minlength="10" maxlength="10" pattern="^[6-9][0-9]{9}$">
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" [(ngModel)]="guest.email" name="email" matInput placeholder="aaa@gmail.com" required email>
+                    </mat-form-field>
+                    
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Check-in</mat-label>
+                        <input [(ngModel)]="guest.check_in" type="date" name="date" matInput placeholder="check-in date" required>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Check-out</mat-label>
+                        <input [(ngModel)]="guest.check_out" type="date" name="date" matInput placeholder="check-out date" required>
+                    </mat-form-field>
+                    <div class="container" style="text-align: center;">
+                        <button type="submit" mat-raised-button color="primary" style="margin-right:5px;">Submit</button>
+
+                        <button routerLink="/carddetails" mat-raised-button color="primary" style="margin-right:5px;">Pay</button>
+                        <button routerLink="/user" mat-raised-button color="primary" style="margin-right:30px;">Go Back</button>
+                    </div>
+                </form>
+                </mat-card>
+                
+            </div>
+        </div>
+    </div>
+</div>
+

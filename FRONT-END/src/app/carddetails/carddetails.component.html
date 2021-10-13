@@ -1,0 +1,44 @@
+
+<p class="tool">
+    <mat-toolbar color="primary">
+      <button mat-button routerLink="/home"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></button>
+      <span>Hotel Management System</span>
+      <span class="example-spacer"></span>
+      <button  mat-button routerLink="/home">Logout</button>
+    </mat-toolbar>
+</p>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                    <h1 class="text-center">Card Details</h1>
+                <form>
+                    
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Card Number</mat-label>
+                        <input name="numb" matInput placeholder="Enter card number" required>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Expiry date</mat-label>
+                        <input name="expiry date" matInput placeholder="MM/YY" required>
+                    </mat-form-field>
+                    
+                    <mat-form-field appearance="outline" style="margin-left: 20px;">
+                        <mat-label>CVV</mat-label>
+                        <input name="cvv" matInput placeholder="XXX" required>
+                    </mat-form-field>
+                    <div class="container" style="text-align: center;">
+                        <button routerLink="/payment" mat-raised-button color="primary" style="margin-right:5px;">Pay</button>
+                        <button routerLink="/guest" mat-raised-button color="accent" style="margin-right:5px;">Go Back</button>
+                    </div>
+                </form>
+                </mat-card>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+

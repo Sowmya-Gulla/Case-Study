@@ -1,0 +1,52 @@
+<p class="tool">
+  <mat-toolbar color="primary">
+    <button mat-button routerLink="/home"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></button>
+    <span>Hotel Management System</span>
+    <!--<button mat-button routerLink="hotels">Hotels</button>
+    <button mat-button>Booking</button>-->
+    <span class="example-spacer"></span>
+    <button  mat-button routerLink="/home">Logout</button>
+  </mat-toolbar>
+</p>
+<div class="container" style="margin-top: 100px;">  
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>
+        <mat-card class="example-card">
+          <mat-card-header style="text-align: center;">
+              
+              <mat-card-title>Rooms Section</mat-card-title>
+              
+            </mat-card-header>
+            <img mat-card-image src="/assets/img/room.jpg" alt="">
+            
+            <mat-card-actions style="text-align: center;">
+              <button (click)="onclick()" mat-raised-button color="accent" style=" margin-left: 50px;">Go To Rooms</button>
+              
+          </mat-card-actions>   
+        </mat-card>
+        
+      </th>
+      <th>
+        <mat-card class="example-card">
+          <mat-card-header >
+              
+              <mat-card-title style="text-align: center;">Management Section</mat-card-title>
+              
+            </mat-card-header>
+            <img mat-card-image src="/assets/img/management.jpg" alt="">
+            
+            <mat-card-actions style="text-align: center;">
+              <button mat-raised-button color="accent">Manage Departments</button>
+              
+          </mat-card-actions>   
+        </mat-card>
+      </th>
+      
+    </tr>
+    </thead>
+    
+  </table>
+</div>
+   
